@@ -10,10 +10,18 @@ spec:
   rules:
     - http:
         paths:
-            - path: /users
-              pathType: Prefix
-              backend:
-                service:
-                  name: users
-                  port:
-                    number: 3000
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: users
+                port:
+                  number: 3000
+                  
+          - path: /users
+            pathType: Prefix
+            backend:
+              service:
+                name: users
+                port:
+                  number: 3000
