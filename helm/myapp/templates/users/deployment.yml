@@ -19,6 +19,6 @@ spec:
             - containerPort: 3000
           env:
             - name: DATABASE_URL
-              value: postgres://user:password@postgres:5432/db
+              value: postgres://user:password@db:5432/db
             - name: NODE_ENV
               value: development
